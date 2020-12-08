@@ -46,7 +46,7 @@ var rootCmd = &cobra.Command{
 	Short:        "Show sub-resources of the Kubernetes object",
 	Example: "  kubectl tree deployment my-app\n" +
 		"  kubectl tree kservice.v1.serving.knative.dev my-app", // TODO add more examples about disambiguation etc
-	Args:    cobra.MinimumNArgs(2),
+	Args:    cobra.MinimumNArgs(1),
 	RunE:    run,
 	Version: versionString(),
 }
